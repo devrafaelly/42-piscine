@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 11:28:50 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/24 11:31:20 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 int	ft_str_is_printable(char *str)
 {
@@ -28,11 +16,9 @@ int	ft_str_is_printable(char *str)
 	return (1);
 }
 
-/*
-int main(void)
+int	main(void)
 {
-    int resultado;
+    int	resultado;
     resultado = ft_str_is_printable("\0");
     printf("%i", resultado);
 }
-*/

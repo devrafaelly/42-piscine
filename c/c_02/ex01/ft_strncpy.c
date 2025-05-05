@@ -1,18 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/23 12:16:50 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 00:19:24 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
-// #include <string.h>
-// #include <unistd.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -31,8 +19,8 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-/*
-int	main()
+
+int	main(void)
 {	
 	char *result;
 	char src[] = "geeEe";
@@ -45,4 +33,3 @@ int	main()
 
 	return (0);
 }
-*/

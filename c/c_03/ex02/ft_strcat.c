@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/29 14:26:16 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/30 20:57:55 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 char	*ft_strcat(char *dest, char *src)
 {
@@ -32,8 +20,8 @@ char	*ft_strcat(char *dest, char *src)
 	dest[j] = '\0';
 	return (dest);
 }
-/*
-int	main()
+
+int	main(void)
 {
 	char	*result;
 	char	src[] = "preto";
@@ -41,4 +29,3 @@ int	main()
 	result = ft_strcat(dest, src);
 	printf("%s", result);
 }
-*/

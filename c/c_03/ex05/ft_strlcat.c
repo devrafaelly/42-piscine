@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/30 18:26:45 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 11:29:07 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-//#include <stdio.h>
+#include <stdio.h>
 
 int	ft_strlen(char *dest)
 {
@@ -46,8 +34,8 @@ int	ft_strlcat(char *dest, char *src, unsigned int size)
 	}
 	return (dest_length + src_length);
 }
-/*
-int	main()
+
+int	main(void)
 {
 	char	src[] = "sonolento";
 	char	dest[6] = "gato";
@@ -56,4 +44,3 @@ int	main()
 	printf("%i\n", ft_strlcat(dest, src, 7));
 	printf("%s", dest);
 }
-*/

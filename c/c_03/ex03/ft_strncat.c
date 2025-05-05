@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/29 17:11:39 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/30 20:28:31 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
@@ -32,8 +20,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main()
+
+int	main(void)
 {
 	char	*result;
 	char	src[] = "mentos";
@@ -41,4 +29,3 @@ int	main()
 	result = ft_strncat(dest, src, 10);
 	printf("%s", result);
 }
-*/

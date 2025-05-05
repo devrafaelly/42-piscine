@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 19:25:46 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/25 19:26:15 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 char	*ft_strupcase(char *str)
 {
@@ -25,12 +13,11 @@ char	*ft_strupcase(char *str)
 	}
 	return (str);
 }
-/*
-int	main()
+
+int	main(void)
 {
 	char	str[] = "ma!usculo";
 
 	ft_strupcase(str);
 	printf("%s", str);
 }
-*/

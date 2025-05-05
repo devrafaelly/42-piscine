@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/21 18:13:12 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/22 20:22:50 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
@@ -21,8 +9,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	}
 }
 
-/*
-int	main()
+int	main(void)
 {
 	int	div;
 	int	mod;
@@ -30,4 +17,3 @@ int	main()
 	ft_div_mod(5, 2, &div, &mod);
 	printf("divisão = %d\nmoda = %d\n", div, mod);
 }
-*/

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/02 14:36:30 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/05/05 18:50:32 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 
 int	ft_negnbr(int nbr)
@@ -76,12 +64,12 @@ void	ft_putnbr_base(int nbr, char *base)
 	}
 }
 
-// int	main()
-// {
-// 	int	nbr;
-// 	char	*base;
+int	main(void)
+{
+	int	nbr;
+	char	*base;
 
-// 	nbr = -438;
-// 	base = "01";
-// 	ft_putnbr_base(nbr, base);
-// }
+	nbr = -438;
+	base = "01";
+	ft_putnbr_base(nbr, base);
+}

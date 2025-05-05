@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/29 18:37:47 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 12:04:47 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 int	ft_strlen(char *to_find)
 {
@@ -45,8 +33,8 @@ char	*ft_strstr(char *str, char *to_find)
 		return ((void *)0);
 	return (&str[i - j]);
 }
-/*
-int	main()
+
+int	main(void)
 {
 	char	*result;
 	char	str[] = "cachorro come muito coms";
@@ -55,4 +43,3 @@ int	main()
 	result = ft_strstr(str, to_find);
 	printf("%s", result);
 }
-*/

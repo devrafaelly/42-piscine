@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -24,11 +12,10 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-/*
-int main()
+
+int	main(void)
 {
     int len;
     len = ft_strlen("contagem de caracteres");
     printf("a string possui %d caracteres\n", len);
 }
-*/

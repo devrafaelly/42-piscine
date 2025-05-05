@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:14:28 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/28 13:30:24 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -25,8 +13,8 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main()
+
+int	main(void)
 {
 	char *str;
 	char dest[] = "String destino";
@@ -35,4 +23,3 @@ int	main()
 	str = ft_strcpy(dest, src);
 	printf("%s\n", str);
 }
-*/

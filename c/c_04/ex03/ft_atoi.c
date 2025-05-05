@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/01 03:46:43 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/05/05 18:43:26 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// #include <stdio.h>
+#include <stdio.h>
 
 int	ft_atoi(char *str)
 {
@@ -39,11 +27,11 @@ int	ft_atoi(char *str)
 	return (result * signal);
 }
 
-// int	main()
-// {
-// 	int	number;
-// 	char	str[] = " 	\n 	---+--+1234ab567";  // objetivo: -1234
-// 	number = ft_atoi(str);
-// 	printf("%i", number);
-// 	return (0);
-// }
+int	main(void)
+{
+	int	number;
+	char	str[] = " 	\n 	---+--+1234ab567";  // objetivo: -1234
+	number = ft_atoi(str);
+	printf("%i", number);
+	return (0);
+}

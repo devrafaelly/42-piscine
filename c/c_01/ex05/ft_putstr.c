@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 13:39:14 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/22 13:39:16 by rafaoliv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 
 void	ft_putstr(char *str)
@@ -20,14 +8,13 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
-/*
-int main()
+
+int	main(void)
 {
     char    *str;
     str = "Impressão de string\n";
     ft_putstr(str);
 }
-*/
 /*
 void ft_putstr(char *str)
 {
@@ -40,7 +27,7 @@ void ft_putstr(char *str)
     }
 }
 
-int main()
+int main(void)
 {
     ft_putstr("Impressão de string");
 }
