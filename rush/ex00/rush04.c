@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vivsanto <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 22:14:25 by vivsanto          #+#    #+#             */
-/*   Updated: 2025/04/20 14:19:26 by jtertuli         ###   ########.fr       */
+/*   Updated: 2025/05/05 19:26:14 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	rush(int col, int lin)
 
 	coluna = 1;
 	linha = 1;
-	if (col < 0 || lin < 0)
+	if (col <=0 || lin <= 0)
 		return (error_message());
 	while (linha <= lin)
 	{

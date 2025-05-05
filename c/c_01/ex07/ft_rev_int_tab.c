@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 15:43:56 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/22 16:59:30 by rafaoliv         ###   ########.fr       */
+/*   Updated: 2025/04/30 18:40:13 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+//#include <stdio.h>
 
 void	ft_rev_int_tab(int *tab, int size)
 {
@@ -20,7 +20,7 @@ void	ft_rev_int_tab(int *tab, int size)
 
 	start = 0;
 	end = size -1;
-	while (start != end)
+	while (start < end)
 	{
 		temp = tab[start];
 		tab[start] = tab[end];
@@ -39,10 +39,10 @@ void print_array(int *tab, int size) {
 
 int	main()
 {
-	int tab[] = {1, 2, 3, 4, 5};
+	int tab[] = {1, 2, 3, 4, 5, 6};
 
-	ft_rev_int_tab(tab, 5);
-	print_array(tab, 5);
+	ft_rev_int_tab(tab, 6);
+	print_array(tab, 6);
 	return (0);
 }
 */

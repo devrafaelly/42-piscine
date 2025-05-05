@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/21 18:13:12 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/22 20:22:50 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-int	ft_strlen(char *str)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int	i;
-
-	i = 0;
-	while (*str)
+	if (b != 0)
 	{
-		i++;
-		str++;
+		*div = a / b;
+		*mod = a % b;
 	}
-	return (i);
 }
+
 /*
-int main()
+int	main()
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	int	div;
+	int	mod;
+
+	ft_div_mod(5, 2, &div, &mod);
+	printf("divisão = %d\nmoda = %d\n", div, mod);
 }
 */

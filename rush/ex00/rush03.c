@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtertuli <jtertuli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 21:18:26 by vivsanto          #+#    #+#             */
-/*   Updated: 2025/04/20 15:59:30 by rafaoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 19:26:09 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	rush(int x, int y)
 	int	coluna;
 
 	linha = 1;
-	if (x < 0 || y < 0)
+	if (x <= 0 || y <= 0)
 		return (error_message());
 	while (linha <= y)
 	{

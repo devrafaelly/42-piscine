@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div.mod.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/21 18:13:12 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 18:43:42 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/24 10:55:57 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/24 10:57:33 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+int	ft_str_is_lowercase(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+			i++;
+		else
+			return (0);
+	}
+	return (1);
 }
 
 /*
-int	main()
+int main()
 {
-	int	div;
-	int	mod;
-
-	ft_div_mod(5, 2, &div, &mod);
-	printf("divisão = %d\nmoda = %d\n", div, mod);
+    int resultado;
+    resultado = ft_str_is_lowercase("abc");
+    printf("%d", resultado);
 }
 */

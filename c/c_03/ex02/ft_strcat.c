@@ -1,34 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/29 14:26:16 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/30 20:57:55 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-int	ft_strlen(char *str)
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (*str)
+	j = 0;
+	while (dest[j] != '\0')
 	{
-		i++;
-		str++;
+		j++;
 	}
-	return (i);
+	while (src[i])
+	{
+		dest[j] = src[i];
+		i++;
+		j++;
+	}
+	dest[j] = '\0';
+	return (dest);
 }
 /*
-int main()
+int	main()
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	char	*result;
+	char	src[] = "preto";
+	char	dest[20] = "gato ";
+	result = ft_strcat(dest, src);
+	printf("%s", result);
 }
 */

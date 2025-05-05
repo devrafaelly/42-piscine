@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 17:14:28 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/28 13:30:24 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/29 17:11:39 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/30 20:28:31 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
-	while (src[i] != '\0')
+	j = 0;
+	while (dest[i] != '\0')
 	{
-		dest[i] = src[i];
 		i++;
+	}
+	while (src[j] != '\0' && j < nb)
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 	dest[i] = '\0';
 	return (dest);
@@ -28,11 +35,10 @@ char	*ft_strcpy(char *dest, char *src)
 /*
 int	main()
 {
-	char *str;
-	char dest[] = "String destino";
-	char src[] = "String origem";
-	
-	str = ft_strcpy(dest, src);
-	printf("%s\n", str);
+	char	*result;
+	char	src[] = "mentos";
+	char	dest[20] = "casa";
+	result = ft_strncat(dest, src, 10);
+	printf("%s", result);
 }
 */

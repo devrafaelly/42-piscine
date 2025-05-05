@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/30 23:26:01 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/05/05 18:46:02 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,19 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while (*str)
+	while (*str != '\0')
 	{
-		i++;
 		str++;
+		i++;
 	}
 	return (i);
 }
 /*
-int main()
+int	main()
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	int	result;
+	char	str[] = "nossa piscina = novos cadetes";
+	result = ft_strlen(str);
+	printf("%i", result);
 }
 */

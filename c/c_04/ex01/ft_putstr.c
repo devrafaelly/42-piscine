@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/30 23:36:59 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/30 23:42:06 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <unistd.h>
 
-int	ft_strlen(char *str)
+void	ft_putstr(char *str)
 {
-	int	i;
-
-	i = 0;
 	while (*str)
 	{
-		i++;
+		write(1, str, 1);
 		str++;
 	}
-	return (i);
 }
 /*
-int main()
+int	main()
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	char	str[] = "cadetes 2025";
+	ft_putstr(str);
 }
 */

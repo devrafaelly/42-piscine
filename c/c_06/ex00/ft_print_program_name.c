@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rafaoliv <rafaoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/05/01 07:34:17 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/05/01 07:54:18 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <unistd.h>
 
-int	ft_strlen(char *str)
+int	main(int argc, char **argv)
 {
 	int	i;
-
+	char *file_name;
+	
+	(void)argc;
+	file_name = argv[0];
 	i = 0;
-	while (*str)
+	while(file_name[i])
 	{
+		write(1, &file_name[i], 1);
 		i++;
-		str++;
 	}
-	return (i);
+	return (0);
 }
-/*
-int main()
-{
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
-}
-*/

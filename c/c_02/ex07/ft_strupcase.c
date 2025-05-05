@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/25 19:25:46 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/25 19:26:15 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-int	ft_strlen(char *str)
+char	*ft_strupcase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (*str)
+	while (str[i])
 	{
+		if (str[i] >= 97 && str[i] <= 122)
+			str[i] = (str[i] - 32);
 		i++;
-		str++;
 	}
-	return (i);
+	return (str);
 }
 /*
-int main()
+int	main()
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	char	str[] = "ma!usculo";
+
+	ft_strupcase(str);
+	printf("%s", str);
 }
 */

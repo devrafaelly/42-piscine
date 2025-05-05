@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/25 19:15:39 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/25 19:25:16 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-int	ft_strlen(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (*str)
+	while (str[i])
 	{
+		if (str[i] >= 65 && str[i] <= 90)
+			str[i] = (str[i] + 32);
 		i++;
-		str++;
 	}
-	return (i);
+	return (str);
 }
 /*
-int main()
+int	main()
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	char	str[] = "M!NUSCuLO";
+	ft_strlowcase(str);
+	printf("%s", str);
 }
 */

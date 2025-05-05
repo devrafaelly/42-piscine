@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaoliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:54:57 by rafaoliv          #+#    #+#             */
-/*   Updated: 2025/04/23 16:20:34 by rafaoliv         ###   ########.fr       */
+/*   Created: 2025/04/23 14:20:37 by rafaoliv          #+#    #+#             */
+/*   Updated: 2025/04/24 11:27:50 by rafaoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-int	ft_strlen(char *str)
+int	ft_str_is_alpha(char *str)
 {
-	int	i;
-
-	i = 0;
 	while (*str)
 	{
-		i++;
-		str++;
+		if ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z'))
+			str++;
+		else
+			return (0);
 	}
-	return (i);
+	return (1);
 }
+
 /*
-int main()
+int	main(void)
 {
-    int len;
-    len = ft_strlen("contagem de caracteres");
-    printf("a string possui %d caracteres\n", len);
+	int	resultado;
+
+	resultado = ft_str_is_alpha("slghsl5753 jfbhoew");
+	printf("%i", resultado);
 }
 */
